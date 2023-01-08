@@ -1,7 +1,7 @@
-import { HestateServer } from './serverSetup';
 import express, { Express } from 'express';
-import dbConnect from './dbSetup';
-import { config } from './config';
+import { HestateServer } from '@root/serverSetup';
+import dbConnect from '@root/dbSetup';
+import { config } from '@root/config';
 
 class App {
   initialize(): void {

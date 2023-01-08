@@ -11,9 +11,9 @@ import { createClient } from 'redis';
 import { createAdapter } from '@socket.io/redis-adapter';
 import HTTP_STATUS from 'http-status-codes';
 import 'express-async-errors';
-import { config } from './config';
-import appRoutes from './routes';
-import { CustomError, IErrorResponse } from './shared/globals/helpers/errorHandler';
+import { config } from '@root/config';
+import appRoutes from '@root/routes';
+import { CustomError, IErrorResponse } from '@global/helpers/errorHandler';
 
 const log: Logger = config.createLogger('Server');
 
